@@ -266,6 +266,17 @@ img {
   /* push hero content below header */
 }
 
+.hero-mask{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:90px; /* adjust as needed */
+    object-fit:cover;
+    z-index:2;
+    pointer-events:none;
+}
+
 .hero-img {
   position: absolute;
   inset: 0;
