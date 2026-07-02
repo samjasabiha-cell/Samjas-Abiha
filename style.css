@@ -143,7 +143,6 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
   display: flex; align-items: flex-end; justify-content: center;
   /* push hero content below header */
-  padding-top: var(--header-h);
 }
 
 .hero-img {
