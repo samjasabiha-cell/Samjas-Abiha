@@ -856,24 +856,20 @@ img { display: block; max-width: 100%; }
 ───────────────────────────────────────── */
 #closing { padding-bottom: clamp(80px,14vw,160px); }
 
-.closing-text {
-  font-family: 'Cormorant Garamond', serif; font-style: italic;
-  font-size: clamp(15px,2.5vw,22px);
-  color: var(--text-mid); line-height: 1.9;
-  max-width: 500px; margin: 0 auto 44px;
+.closing-text{
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:clamp(20px,2vw,28px);
+
+    line-height:1.8;
+
+    color:var(--text-mid);
+
+    max-width:650px;
+
+    margin:0 auto;
 }
-.closing-names {
-  font-family: "Arizonia", cursive;
-  font-weight: 400;
-  font-size: clamp(36px,7vw,72px);
-  color: var(--main); line-height: 1;
-}
-.closing-date {
-  font-family: 'Jost', sans-serif; font-weight: 400;
-  font-size: clamp(11px,1.8vw,13px);
-  letter-spacing: 0.38em; text-transform: uppercase;
-  color: var(--main); margin-top: 20px; opacity: 0.85;
-}
+
 
 /* ─────────────────────────────────────────
    RESPONSIVE
