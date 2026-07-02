@@ -503,12 +503,14 @@ img { display: block; max-width: 100%; }
 }
 
 .save-date-date{
-    font-family:"Arizonia",cursive;
-    font-size:clamp(52px,6vw,82px);
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+    font-size:clamp(34px,3.8vw,52px);
     color:var(--main);
-    line-height:1;
-    margin-top:15px;
-    margin-bottom:10px;
+    line-height:1.2;
+    letter-spacing:.04em;
+    margin-top:18px;
+    margin-bottom:18px;
 }
 
 .save-date-venue{
