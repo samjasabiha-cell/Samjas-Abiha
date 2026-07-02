@@ -468,18 +468,21 @@ img { display: block; max-width: 100%; }
   text-align: center;
 }
 
-.section-title{
-    font-family:"Arizonia", cursive;
+.section-title {
+    display: block;
 
-    font-size:clamp(60px,7vw,90px);
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
+    font-size: clamp(41px, 6vw, 77px);
 
-    color:var(--main);
+    color: var(--main);
 
-    margin-bottom:45px;
+    line-height: 1;
+    letter-spacing: 0.02em;
 
-    line-height:1;
+    text-align: center;
 
-    text-align:center;
+    margin: 0 0 30px;
 }
 
 /* ─────────────────────────────────────────
