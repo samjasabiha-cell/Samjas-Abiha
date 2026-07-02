@@ -492,8 +492,6 @@ img { display: block; max-width: 100%; }
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
-
-    transform:scale(1.05);
 }
 
 .parallax-overlay{
