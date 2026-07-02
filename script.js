@@ -77,7 +77,7 @@ document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
   if (!canvas) return;
 
   const URLS = [
-  './assets/petal1.webp',
+  './assets/sparkle1.webp',
   './assets/petal2.webp'
 ];
 
