@@ -320,19 +320,16 @@ img {
   z-index: 1;
 } */
 
-.hero-caption {
-  position: absolute;
-  z-index: 2;
-
-  bottom: 60px;
-  left: 0;
-  right: 0;
-
-  text-align: center;
-  padding: 0 24px;
-
-  opacity: 0;
-  animation: capReveal 1s ease 1.5s forwards;
+.hero-caption{
+    position:absolute;
+    z-index:2;
+    left:0;
+    right:0;
+    bottom:120px;   /* was 60px */
+    text-align:center;
+    padding:0 24px;
+    opacity:0;
+    animation:capReveal 1s ease 1.5s forwards;
 }
 
 @keyframes capReveal {
