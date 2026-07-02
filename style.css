@@ -61,14 +61,14 @@ img { display: block; max-width: 100%; }
   opacity: 0;
   animation: lFade 0.5s ease 0.15s forwards;
 }
-.loader-outline, .loader-fill {
+/* .loader-outline, .loader-fill {
   white-space: nowrap;
   display: inline-block;
 }
 .loader-outline {
   color: transparent;
   -webkit-text-stroke: 1.5px var(--navy);
-}
+} */
 .loader-fill {
   position: absolute;
   top: 0; left: 0;
