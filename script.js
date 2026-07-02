@@ -12,18 +12,25 @@ window.onbeforeunload = function () {
 };
 
 /* ── LOADER ── */
-document.addEventListener('DOMContentLoaded', () => {
-  window.scrollTo(0, 0);
+document.addEventListener("DOMContentLoaded", () => {
 
-  const loader = document.getElementById('loader');
+    window.scrollTo(0, 0);
 
-  if (loader) {
-    loader.classList.remove('hidden');
+    const loader = document.getElementById("loader");
+    const svg = document.getElementById("loader-svg");
 
-    setTimeout(() => {
-      loader.classList.add('hidden');
-    }, 1700);
-  }
+    if (svg) {
+        svg.data = "assets/save-the-date.svg?v=" + Date.now();
+    }
+
+    if (loader) {
+        loader.classList.remove("hidden");
+
+        setTimeout(() => {
+            loader.classList.add("hidden");
+        }, 1700);
+    }
+
 });
 
 function updateCountdown() {
