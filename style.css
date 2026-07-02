@@ -473,16 +473,146 @@ img { display: block; max-width: 100%; }
 /* ─────────────────────────────────────────
    PARALLAX GALLERY
 ───────────────────────────────────────── */
-#parallax-section { position: relative; overflow: hidden; }
-.parallax-bg {
-  height: 55vh;
-  min-height: 320px;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+/* ─────────────────────────────────────────
+   PARALLAX SAVE THE DATE
+───────────────────────────────────────── */
+
+#parallax-section{
+    position:relative;
+    height:100vh;
+    min-height:750px;
+    overflow:hidden;
 }
-@media (max-width: 768px) {
-  .parallax-bg { background-attachment: scroll; height: 42vh; }
+
+.parallax-bg{
+    position:absolute;
+    inset:0;
+
+    background-image:url("./assets/parallax.webp");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    transform:scale(1.05);
+}
+
+.parallax-overlay{
+    position:absolute;
+    inset:0;
+
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.28)
+    );
+}
+
+.save-date-flower{
+    width:90px;
+    margin-bottom:20px;
+}
+
+.save-date-title{
+    width:min(320px,72vw);
+    margin-bottom:25px;
+}
+
+.save-date-date{
+    font-family:"Allura",cursive;
+    font-size:clamp(44px,5vw,72px);
+    color:#fff;
+    margin-bottom:12px;
+
+    text-shadow:
+        0 4px 20px rgba(0,0,0,.35);
+}
+
+.save-date-venue{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(20px,2vw,28px);
+
+    color:#fff;
+
+    line-height:1.5;
+
+    margin-bottom:60px;
+
+    text-shadow:
+        0 4px 20px rgba(0,0,0,.35);
+}
+
+.countdown-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+    width:min(700px,100%);
+}
+
+.countdown-grid span{
+    display:block;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(44px,5vw,72px);
+
+    color:#fff;
+
+    text-shadow:
+        0 4px 20px rgba(0,0,0,.35);
+}
+
+.countdown-grid small{
+    display:block;
+
+    margin-top:8px;
+
+    font-family:"Jost",sans-serif;
+
+    font-size:11px;
+
+    letter-spacing:.25em;
+
+    text-transform:uppercase;
+
+    color:#FFF8F0;
+}
+
+@media (max-width:768px){
+
+    #parallax-section{
+        min-height:650px;
+    }
+
+    .parallax-bg{
+        background-attachment:scroll;
+    }
+
+    .countdown-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    .save-date-flower{
+        width:70px;
+    }
+
+    .save-date-title{
+        width:220px;
+    }
+
 }
 
 .std-banner {
