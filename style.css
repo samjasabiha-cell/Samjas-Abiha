@@ -328,17 +328,19 @@ img { display: block; max-width: 100%; }
   margin-bottom: 14px;
 }
 .hero-mono {
-  font-family: "Arizonia", cursive;
-  font-weight: 400;
-  font-size: clamp(70px,11vw,130px);
+    font-family: "Arizonia", cursive;
+    font-weight: 400;
 
-  color: #fff8f0;
+    /* Responsive size */
+    font-size: clamp(85px, 12vw, 180px);
 
-  line-height: 1;
+    color: #FFF8F0;
 
-  text-shadow:
-    0 2px 20px rgba(122,74,33,0.18),
-    0 2px 50px rgba(255,255,255,0.18);
+    line-height: 0.9;
+
+    text-shadow:
+        0 4px 16px rgba(0,0,0,.18),
+        0 8px 30px rgba(0,0,0,.12);
 }
 .hero-std-img {
   max-width: min(280px, 68vw);
@@ -394,6 +396,18 @@ img { display: block; max-width: 100%; }
     transform: translateX(-50%) translateY(6px);
   }
 }
+
+/* ─────────────────────────────────────────
+   DESKTOP HERO SIZE
+───────────────────────────────────────── */
+@media (min-width: 1200px) {
+
+    .hero-mono{
+        font-size: 175px;
+    }
+
+}
+
 
 /* ─────────────────────────────────────────
    CORNER FLOWERS
