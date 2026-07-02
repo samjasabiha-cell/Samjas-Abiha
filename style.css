@@ -64,11 +64,11 @@ img { display: block; max-width: 100%; }
 /* .loader-outline, .loader-fill {
   white-space: nowrap;
   display: inline-block;
-}
+}*/
 .loader-outline {
   color: transparent;
   -webkit-text-stroke: 1.5px var(--navy);
-} */
+}
 .loader-fill {
   position: absolute;
   top: 0; left: 0;
