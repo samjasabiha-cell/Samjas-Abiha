@@ -82,81 +82,95 @@ img { display: block; max-width: 100%; }
     animation: lFade .5s ease .15s forwards;
 }
 
-/* Both layers perfectly overlap */
+/* ===========================
+   TEXT LAYERS
+=========================== */
 
 .loader-outline,
-.loader-fill{
-    position:absolute;
-    inset:0;
+.loader-fill {
+    position: absolute;
+    inset: 0;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    white-space:nowrap;
+    white-space: nowrap;
 }
+
+/* Outline always visible */
 
 .loader-outline {
-  position: relative;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--navy);
+    position: relative;
+
+    color: transparent;
+
+    -webkit-text-stroke: 2px var(--navy);
 }
 
+/* Filled text */
+
 .loader-fill {
-  color: var(--navy);
+    color: var(--navy);
 
-  overflow: hidden;
+    overflow: hidden;
 
-  /* Hide entire fill initially */
-  clip-path: inset(100% 0 0 0);
+    transform-origin: bottom center;
+    transform: scaleY(0);
 
-  animation: liquidFill 2.2s cubic-bezier(.25,.8,.25,1) .3s forwards;
+    animation: fillRise 2.2s cubic-bezier(.22,1,.36,1) .3s forwards;
+
+    will-change: transform;
 }
 
 /* ===========================
-   LIQUID WAVE
+   WAVE
 =========================== */
 
 .loader-fill::before {
-  content: "";
+    content: "";
 
-  position: absolute;
+    position: absolute;
 
-  left: -10%;
-  bottom: 100%;
+    left: -10%;
+    bottom: 100%;
 
-  width: 120%;
-  height: 26px;
+    width: 120%;
+    height: 26px;
 
-  background:
-      radial-gradient(circle at 20px 18px, var(--navy) 16px, transparent 17px),
-      radial-gradient(circle at 70px 8px, var(--navy) 13px, transparent 14px),
-      radial-gradient(circle at 130px 18px, var(--navy) 16px, transparent 17px);
+    background:
+        radial-gradient(circle at 20px 18px, var(--navy) 16px, transparent 17px),
+        radial-gradient(circle at 70px 8px, var(--navy) 13px, transparent 14px),
+        radial-gradient(circle at 130px 18px, var(--navy) 16px, transparent 17px);
 
-  animation: waveMove 1.5s linear infinite;
+    animation: waveMove 1.5s linear infinite;
 }
 
-@keyframes liquidFill {
+/* ===========================
+   ANIMATIONS
+=========================== */
 
-  from {
-    clip-path: inset(100% 0 0 0);
-  }
+@keyframes fillRise {
 
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 
 }
 
 @keyframes waveMove {
 
-  from {
-    transform: translateX(0);
-  }
+    from {
+        transform: translateX(0);
+    }
 
-  to {
-    transform: translateX(-110px);
-  }
+    to {
+        transform: translateX(-110px);
+    }
 
 }
 
