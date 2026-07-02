@@ -1,273 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Samjas &amp; Abiha — Wedding Invitation</title>
-
-  <meta name="description" content="Join us for the wedding of Samjas & Abiha — 26 July 2026, Tirur, Kerala." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Samjas & Abiha — Wedding Invitation" />
-  <meta property="og:description" content="26 July 2026 · Tirur, Kerala" />
-  <meta property="og:image" content="./assets/metaimage.jpg" />
-  <meta property="og:image:width" content="500" />
-  <meta property="og:image:height" content="281" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="./assets/metaimage.jpg" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/webp" sizes="32x32" href="./assets/favicon.webp" />
-  <link rel="icon" type="image/webp" sizes="16x16" href="./assets/favicon.webp" />
-  <link rel="shortcut icon" href="./assets/favicon.webp" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- LOADER -->
-  <div id="loader">
-
-    <object
-    id="loader-svg"
-    data="assets/save-the-date.svg"
-    type="image/svg+xml">
-</object>
-
-    <img
-        class="loader-flower"
-        src="assets/story-flowers.webp"
-        alt=""
-    >
-
-    <div class="loader-line"></div>
-
-</div>
-
-  <!-- STICKY HEADER -->
-  <header id="site-header"></header>
-
-
-  <!-- PETALS CANVAS — overflows above viewport -->
-  <div id="pcanvas" aria-hidden="true"></div>
-
-  <!-- ══════════════════════ HERO ══════════════════════ -->
-  <section id="hero" aria-label="Hero">
-    <div class="hero-img" id="heroImg"></div>
-
-    <div class="hero-fade-top"></div>
-    <div class="hero-fade-bottom"></div>
-
-    <div class="hero-caption">
-
-        <div class="hero-mono">
-            Samjas weds. Abiha
-        </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samjas &amp; Abiha — Wedding Invitation</title>
+    <meta name="description" content="Join us for the wedding of Samjas & Abiha — 26 July 2026, Tirur, Kerala." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Samjas & Abiha — Wedding Invitation" />
+    <meta property="og:description" content="26 July 2026 · Tirur, Kerala" />
+    <meta property="og:image" content="./assets/metaimage.jpg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="281" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="./assets/metaimage.jpg" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" sizes="32x32" href="./assets/favicon.webp" />
+    <link rel="icon" type="image/webp" sizes="16x16" href="./assets/favicon.webp" />
+    <link rel="shortcut icon" href="./assets/favicon.webp" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div id="loader">
+      <object id="loader-svg" data="assets/save-the-date.svg" type="image/svg+xml"></object>
+      <img class="loader-flower" src="assets/story-flowers.webp" alt="">
+      <div class="loader-line"></div>
     </div>
-
-</section>
-
-  
-
-<!-- ══════════════════════ SAVE THE DATE ══════════════════════ -->
-
-<section class="section-wrap save-date-section reveal">
-
-    <img
-        class="save-date-flower"
-        src="./assets/story-flowers.webp"
-        alt="">
-
-    <p class="section-title">
-        Save the Date
-    </p>
-
-    <div class="save-date-date">
-        26 July 2026
-    </div>
-
-    <div class="save-date-venue">
-        Shadi Mahal Auditorium
-        <br>
-        Tirur, Kerala
-    </div>
-
-    <div class="countdown-grid">
-
+    <!-- STICKY HEADER -->
+    <header id="site-header"></header>
+    <!-- PETALS CANVAS — overflows above viewport -->
+    <div id="pcanvas" aria-hidden="true"></div>
+    <!-- ══════════════════════ HERO ══════════════════════ -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-img" id="heroImg"></div>
+      <div class="hero-fade-top"></div>
+      <div class="hero-fade-bottom"></div>
+      <div class="hero-caption">
+        <div class="hero-mono"> Samjas weds. Abiha </div>
+      </div>
+    </section>
+    <!-- ══════════════════════ SAVE THE DATE ══════════════════════ -->
+    <section class="section-wrap save-date-section reveal">
+      <img class="save-date-flower" src="./assets/story-flowers.webp" alt="">
+      <p class="section-title"> Save the Date </p>
+      <div class="save-date-date"> 26 July 2026 </div>
+      <div class="save-date-venue"> Shadi Mahal Auditorium <br> Tirur, Kerala </div>
+      <div class="countdown-grid">
         <div>
-            <span id="days">000</span>
-            <small>Days</small>
+          <span id="days">000</span>
+          <small>Days</small>
         </div>
-
         <div>
-            <span id="hours">00</span>
-            <small>Hours</small>
+          <span id="hours">00</span>
+          <small>Hours</small>
         </div>
-
         <div>
-            <span id="minutes">00</span>
-            <small>Minutes</small>
+          <span id="minutes">00</span>
+          <small>Minutes</small>
         </div>
-
         <div>
-            <span id="seconds">00</span>
-            <small>Seconds</small>
+          <span id="seconds">00</span>
+          <small>Seconds</small>
         </div>
-
-    </div>
-
-</section>
-    
-
-<!-- ══════════════════════ PARALLAX ══════════════════════ -->
-<section id="parallax-section" aria-label="Couple">
-
-    <div class="parallax-bg"></div>
-
-    <div class="parallax-overlay">
-
-        <p class="std-banner reveal">
-            You are cordially invited
-            <br><br>
-            to the wedding of
+      </div>
+    </section>
+    <!-- ══════════════════════ PARALLAX ══════════════════════ -->
+    <section id="parallax-section" aria-label="Couple">
+      <div class="parallax-bg"></div>
+      <div class="parallax-overlay">
+        <p class="std-banner reveal"> You are cordially invited <br>
+          <br> to the wedding of
         </p>
-
         <div class="couple-row">
-
-            <div class="couple-col reveal">
-
-                <span class="name">
-                    Samjas
-                </span>
-
-                <div class="parents-block">
-                    <p class="parent-line">
-                        Beloved son of
-                        <br>
-                        Mr Siddeck Mathoor
-                        <br>&amp;<br>
-                        Mrs Noorjahan Arakkal Pazhayakath
-                    </p>
-                </div>
-
+          <div class="couple-col reveal">
+            <span class="name"> Samjas </span>
+            <div class="parents-block">
+              <p class="parent-line"> Beloved son of <br> Mr Siddeck Mathoor <br>&amp; <br> Mrs Noorjahan Arakkal Pazhayakath </p>
             </div>
-
-            <div class="heart-mid">
-                <img src="./assets/heartmiddle.webp" alt="">
+          </div>
+          <div class="heart-mid">
+            <img src="./assets/heartmiddle.webp" alt="">
+          </div>
+          <div class="couple-col reveal">
+            <span class="name"> Abiha </span>
+            <div class="parents-block">
+              <p class="parent-line"> Beloved daughter of <br> Mr Abdul Khadar <br>&amp; <br> Mrs Sakeena </p>
             </div>
-
-            <div class="couple-col reveal">
-
-                <span class="name">
-                    Abiha
-                </span>
-
-                <div class="parents-block">
-                    <p class="parent-line">
-                        Beloved daughter of
-                        <br>
-                        Mr Abdul Khadar
-                        <br>&amp;<br>
-                        Mrs Sakeena
-                    </p>
-                </div>
-
-            </div>
-
+          </div>
         </div>
-
-    </div>
-
-</section>
-
- <!-- ══════════════════════ WEDDING CEREMONY ══════════════════════ -->
-<div class="section-wrap"
-     style="padding-top:40px; max-width:1000px;"
-     aria-label="Wedding Ceremony">
-
-    <p class="section-title reveal">
-        Wedding Ceremony
-    </p>
-
-    <div class="cards-wrapper">
-
+      </div>
+    </section>
+    <!-- ══════════════════════ WEDDING CEREMONY ══════════════════════ -->
+    <div class="section-wrap" style="padding-top:40px; max-width:1000px;" aria-label="Wedding Ceremony">
+      <p class="section-title reveal"> Wedding Ceremony </p>
+      <div class="cards-wrapper">
         <article class="event-card reveal d1">
-
-            <div class="map-wrapper">
-
-                <iframe
-                    src="https://www.google.com/maps?q=10.84177927800332,75.9450667375329&output=embed"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-
-            </div>
-
-            <h3 class="card-title">
-                Shadi Mahal Auditorium
-            </h3>
-
-            <p class="card-subtitle">
-                Tirur, Kerala
-            </p>
-
-            <div class="card-detail">
-
-                Tirur–Chamravattom Rd,<br>
-
-                Perunthallur,
-
-                Triprangode,
-
-                Kerala 676102
-
-            </div>
-
-            <div class="card-time">
-
-                12:00 PM
-
-            </div>
-
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps?q=10.84177927800332,75.9450667375329&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <h3 class="card-title"> Shadi Mahal Auditorium </h3>
+          <p class="card-subtitle"> Tirur, Kerala </p>
+          <div class="card-detail"> Tirur–Chamravattom Rd, <br> Perunthallur, Triprangode, Kerala 676102 </div>
+          <div class="card-time"> 12:00 PM </div>
         </article>
-
+      </div>
     </div>
-
-</div>
-
-<!-- ══════════════════════ THANK YOU ══════════════════════ -->
-
-<div class="section-wrap"
-     id="closing"
-     aria-label="Closing">
-
-    <p class="section-title reveal">
-        Thank You
-    </p>
-
-    <p class="closing-text reveal d2">
-
-        Your love, blessings and presence
-        mean the world to us.
-        <br>
-        We look forward to celebrating
-        this beautiful day together.
-
-    </p>
-
-</div>
-
-  <script src="script.js"></script>
-</body>
+    <!-- ══════════════════════ THANK YOU ══════════════════════ -->
+    <div class="section-wrap" id="closing" aria-label="Closing">
+      <p class="section-title reveal"> Thank You </p>
+      <p class="closing-text reveal d2"> Your love, blessings and presence mean the world to us. <br> We look forward to celebrating this beautiful day together. </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
