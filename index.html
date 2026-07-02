@@ -37,14 +37,16 @@
 
   <!-- LOADER -->
   <div id="loader" aria-hidden="true">
-    <div class="loader-mono">Samjas &amp;Abiha</div>
+    <div class="loader-text-wrap">
+      <span class="loader-outline" aria-hidden="true">Save the Date</span>
+      <span class="loader-fill">Save the Date</span>
+    </div>
+    <img class="loader-flower" src="./assets/rose.webp" alt="" aria-hidden="true" />
     <div class="loader-line"></div>
   </div>
 
   <!-- STICKY HEADER -->
-  <header id="site-header">
-  <div class="header-top-image"></div>
-  </header>
+  <header id="site-header"></header>
 
 
   <!-- PETALS CANVAS — overflows above viewport -->
@@ -57,6 +59,7 @@
     <div class="hero-fade-bottom"></div>
     <div class="hero-caption">
       <div class="hero-mono">S &amp;A</div>
+      <img class="hero-std-img" src="./assets/save-the-date.png" alt="Save the Date — 26 July 2026" />
       <div id="countdown"></div>
     </div>
     <div class="scroll-cue" aria-hidden="true">
@@ -68,56 +71,44 @@
 
   <!-- ══════════════════════ COUPLE NAMES ══════════════════════ -->
 <div class="section-wrap" aria-label="Couple">
-  <div class="rose-accent reveal">
-    <img src="/assets/rose.webp" alt="Rose" />
-  </div>
-
   <p class="std-banner reveal d1">
     You are cordially invited <br><br>to the wedding of
   </p>
 
-  <div class="std-main reveal d2">
-    <span class="name">Samjas</span>
-
-    <div class="parents-block reveal d3">
-      <p class="parent-line">
-        Beloved son of<br>
-        Mr Siddeck Mathoor <br>
-        &amp;<br>
-        Mrs Noorjahan Arakkal Pazhayakath
-      </p>
+  <div class="couple-row">
+    <div class="couple-col reveal d2">
+      <span class="name">Abiha</span>
+      <div class="parents-block reveal d3">
+        <p class="parent-line">
+          Beloved daughter of<br>
+          Mr Abdul Khadar <br>
+          &amp;<br>
+          Mrs Sakeena
+        </p>
+      </div>
     </div>
 
-    <span class="name-and">&amp;</span>
+    <div class="heart-mid reveal d2" aria-hidden="true">
+      <img src="./assets/heartmiddle.webp" alt="" />
+    </div>
 
-    <span class="name">Abiha</span>
-
-    <div class="parents-block reveal d3">
-      <p class="parent-line">
-        Beloved daughter of<br>
-        Mr Abdul Khadar <br>
-        &amp;<br>
-        Mrs Sakeena
-      </p>
+    <div class="couple-col reveal d2">
+      <span class="name">Samjas</span>
+      <div class="parents-block reveal d3">
+        <p class="parent-line">
+          Beloved son of<br>
+          Mr Siddeck Mathoor <br>
+          &amp;<br>
+          Mrs Noorjahan Arakkal Pazhayakath
+        </p>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ SAVE THE DATE ══════════════════════ -->
-<section id="std" aria-label="Save the Date">
-  <div class="std-inner">
-    <p class="std-banner reveal d1">Save The Date</p>
-
-    <h2 class="std-main reveal d2">Sunday</h2>
-
-    <div class="std-date reveal d3">
-      <em>26</em> July <em>2026</em>
-    </div>
-
-    <div class="rose-divider reveal" aria-hidden="true">
-      <img src="/assets/rose.webp" alt="Rose" />
-    </div>
-  </div>
+<!-- ══════════════════════ PARALLAX ══════════════════════ -->
+<section id="parallax-section" aria-label="Gallery">
+  <div class="parallax-bg" style="background-image:url('./assets/parallax.webp')"></div>
 </section>
   <!-- ══════════════════════ VENUES ══════════════════════ -->
   <div class="section-wrap" style="padding-top:40px; max-width:900px;" aria-label="Event Details">
@@ -143,16 +134,11 @@
     </div>
   </div>
 
-  <!-- ══════════════════════ CLOSING ══════════════════════ -->
+  <!-- ══════════════════════ THANK YOU ══════════════════════ -->
   <div class="section-wrap" id="closing" aria-label="Closing">
-    <div class="fdiv reveal">
-      <div class="fl"></div>
-      <img src="/assets/rose.webp" alt="Rose" />
-      <div class="fr"></div>
-    </div>
     <p class="closing-text reveal d1">
-      "With hearts full of joy, we invite you<br />
-      to be part of our new beginning."
+      Thank you for being part of our journey.<br />
+      We can't wait to celebrate this day with you.
     </p>
     <div class="closing-names reveal d2">Samjas &amp; Abiha</div>
     <p class="closing-date reveal d3">26 &middot; July &middot; 2026 &middot; Tirur, Kerala</p>
