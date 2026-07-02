@@ -839,12 +839,12 @@ border-bottom:1px solid var(--gold);
 border-right:1px solid var(--gold);
 }
 .card-title{
-font-family:"Arizonia",cursive;
-font-weight:400;
-font-size:clamp(46px,5vw,64px);
-color:var(--main);
-line-height:1;
-margin:22px 0 8px;
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+    font-size:clamp(20px,2.3vw,31px);
+    color:var(--main);
+    line-height:1.2;
+    margin:22px 0 8px;
 }
 .card-subtitle{
 font-family:"Jost",sans-serif;
