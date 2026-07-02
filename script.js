@@ -78,7 +78,7 @@ document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
 
   const URLS = [
   './assets/sparkle1.webp',
-  './assets/petal2.webp'
+  './assets/heart1.webp'
 ];
 
   /* Inject keyframe once — translateY starts at -200px (= canvas offset)
