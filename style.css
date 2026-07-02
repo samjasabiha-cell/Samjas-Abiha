@@ -723,13 +723,16 @@ img {
   margin-top: 30px;
 }
 
-.heart-mid img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
-  animation: roseFloat 5s ease-in-out infinite;
+.heart-mid img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+    filter:
+        brightness(1.08)
+        saturate(1.08)
+        drop-shadow(0 6px 18px rgba(0,0,0,.35));
+    animation:roseFloat 5s ease-in-out infinite;
 }
 
 @media (max-width: 768px) {
