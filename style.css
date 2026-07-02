@@ -37,6 +37,7 @@ img { display: block; max-width: 100%; }
 /* ─────────────────────────────────────────
    LOADER
 ───────────────────────────────────────── */
+
 #loader {
   position: fixed;
   inset: 0;
@@ -46,55 +47,152 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: opacity 0.9s ease, visibility 0.9s ease;
+  transition: opacity .9s ease, visibility .9s ease;
 }
-#loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ===========================
+   NAME
+=========================== */
 
 .loader-text-wrap {
   position: relative;
   display: inline-block;
+
   font-family: "Allura", cursive;
   font-weight: 400;
-  font-size: clamp(44px, 11vw, 90px);
-  line-height: 1;
-  padding: 0 10px;
+
+  /* Huge text */
+  font-size: min(70vw, 65vh);
+  line-height: .82;
+
   opacity: 0;
-  animation: lFade 0.5s ease 0.15s forwards;
+  animation: lFade .5s ease .15s forwards;
 }
-/* .loader-outline, .loader-fill {
-  white-space: nowrap;
-  display: inline-block;
-}*/
-.loader-outline {
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--navy);
-}
+
+/* Both layers perfectly overlap */
+
+.loader-outline,
 .loader-fill {
   position: absolute;
-  top: 0; left: 0;
-  color: var(--navy);
-  -webkit-text-stroke: 1.5px var(--navy);
-  overflow: hidden;
-  width: 0;
-  animation: fillText 1.3s ease 0.3s forwards;
+  inset: 0;
+  white-space: nowrap;
 }
-@keyframes fillText { to { width: 100%; } }
+
+.loader-outline {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--navy);
+}
+
+.loader-fill {
+  color: var(--navy);
+
+  overflow: hidden;
+
+  /* Hide entire fill initially */
+  clip-path: inset(100% 0 0 0);
+
+  animation: liquidFill 2.2s cubic-bezier(.25,.8,.25,1) .3s forwards;
+}
+
+/* ===========================
+   LIQUID WAVE
+=========================== */
+
+.loader-fill::before {
+  content: "";
+
+  position: absolute;
+
+  left: -10%;
+  bottom: 100%;
+
+  width: 120%;
+  height: 26px;
+
+  background:
+      radial-gradient(circle at 20px 18px, var(--navy) 16px, transparent 17px),
+      radial-gradient(circle at 70px 8px, var(--navy) 13px, transparent 14px),
+      radial-gradient(circle at 130px 18px, var(--navy) 16px, transparent 17px);
+
+  animation: waveMove 1.5s linear infinite;
+}
+
+@keyframes liquidFill {
+
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+
+}
+
+@keyframes waveMove {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-110px);
+  }
+
+}
+
+/* ===========================
+   FLOWER
+=========================== */
 
 .loader-flower {
   width: clamp(46px, 9vw, 74px);
-  margin-top: 16px;
+  margin-top: 20px;
+
   opacity: 0;
-  animation: lFade 0.8s ease 0.5s forwards;
-  filter: drop-shadow(0 4px 14px rgba(122,74,33,0.18));
+  animation: lFade .8s ease .5s forwards;
+
+  filter: drop-shadow(0 4px 14px rgba(122,74,33,.18));
 }
+
+/* ===========================
+   LINE
+=========================== */
+
 .loader-line {
-  width: 0; height: 1px;
-  margin-top: 16px;
-  background: linear-gradient(90deg, transparent, var(--blue-soft), transparent);
-  animation: lLine 1.2s ease 0.6s forwards;
+  width: 0;
+  height: 1px;
+
+  margin-top: 18px;
+
+  background: linear-gradient(
+      90deg,
+      transparent,
+      var(--blue-soft),
+      transparent
+  );
+
+  animation: lLine 1.2s ease .6s forwards;
 }
-@keyframes lFade { to { opacity: 1; } }
-@keyframes lLine { to { width: 140px; } }
+
+@keyframes lFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lLine {
+  to {
+    width: 140px;
+  }
+}
 
 /* ─────────────────────────────────────────
    STICKY HEADER
