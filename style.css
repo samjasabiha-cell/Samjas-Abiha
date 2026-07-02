@@ -54,7 +54,7 @@ img { display: block; max-width: 100%; }
   position: relative;
   display: inline-block;
   font-family: "Allura", cursive;
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(44px, 11vw, 90px);
   line-height: 1;
   padding: 0 10px;
@@ -63,7 +63,7 @@ img { display: block; max-width: 100%; }
 }
 .loader-outline, .loader-fill {
   white-space: nowrap;
-  display: block;
+  display: inline-block;
 }
 .loader-outline {
   color: transparent;
@@ -163,7 +163,7 @@ img { display: block; max-width: 100%; }
   z-index: 1;
 }
 
-/* simple bottom fade: transparent → white */
+/* simple bottom fade: transparent → white 
 .hero-fade-bottom {
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 70%;
@@ -176,7 +176,7 @@ img { display: block; max-width: 100%; }
    );
   pointer-events: none;
   z-index: 1;
-}
+} */
 
 .hero-caption {
   position: absolute;
@@ -205,7 +205,7 @@ img { display: block; max-width: 100%; }
 }
 .hero-mono {
   font-family: "Allura", cursive;
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(80px, 17vw, 150px);
 
   color: #7A4A21;
@@ -558,7 +558,7 @@ img { display: block; max-width: 100%; }
 }
 .closing-names {
   font-family: "Allura", cursive;
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(36px,7vw,72px);
   color: var(--navy); line-height: 1;
 }
