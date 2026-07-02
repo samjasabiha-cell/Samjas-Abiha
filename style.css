@@ -53,7 +53,7 @@ img { display: block; max-width: 100%; }
 .loader-text-wrap {
   position: relative;
   display: inline-block;
-  font-family: "Corinthia", cursive;
+  font-family: "Allura", cursive
   font-weight: 700;
   font-size: clamp(44px, 11vw, 90px);
   line-height: 1;
@@ -205,7 +205,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 14px;
 }
 .hero-mono {
-  font-family: "Corinthia", cursive;
+  font-family: "Allura", cursive
   font-weight: 700;
   font-size: clamp(80px, 17vw, 150px);
 
@@ -423,7 +423,7 @@ img { display: block; max-width: 100%; }
   color: var(--text-light); margin-bottom: 28px;
 }
 .name {
-  font-family: "Corinthia", cursive;
+  font-family: "Allura", cursive
   font-weight: 400;
    font-size: clamp(41px, 6vw, 77px);
   color: var(--navy); line-height: 1; letter-spacing: 0.02em; display: block;
@@ -558,7 +558,7 @@ img { display: block; max-width: 100%; }
   max-width: 500px; margin: 0 auto 44px;
 }
 .closing-names {
-  font-family: "Corinthia", cursive;
+  font-family: "Allura", cursive
   font-weight: 700;
   font-size: clamp(36px,7vw,72px);
   color: var(--navy); line-height: 1;
